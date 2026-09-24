@@ -34,24 +34,21 @@
     .step { border-top:1px solid var(--ink); padding-top:.8rem; }
     .number { display:block; color:var(--accent); margin-bottom:1.2rem; }
     h3 { margin:0 0 .35rem; font-size:1.06rem; }
-    .step p,.tech p { margin:0; color:var(--muted); font-size:.94rem; }
-    .tech-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:3rem; margin-bottom:5rem; }
-    .tech { border-top:1px solid var(--line); padding:1rem 0 1.25rem; display:grid; grid-template-columns:1fr 2fr; gap:1rem; }
-    .tech h3 { font-size:.98rem; }
+    .step p { margin:0; color:var(--muted); font-size:.94rem; }
     .closing { border-top:1px solid var(--ink); padding:2rem 0 5rem; display:grid; grid-template-columns:1fr 2fr; gap:2rem; }
     .closing h2 { margin:0; }
     .closing p { max-width:650px; margin:0; font-size:1.18rem; }
     footer { border-top:1px solid var(--line); border-bottom:0; padding-block:1.6rem 2.5rem; color:var(--muted); font-size:.85rem; }
     .foot { display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
-    @media(max-width:740px) { .hero { grid-template-columns:1fr; gap:2.5rem; } .hero-note { max-width:430px; } .steps,.tech-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .closing { grid-template-columns:1fr; gap:1rem; } }
-    @media(max-width:500px) { .wrap { width:min(100% - 2rem,1080px); } .nav { align-items:flex-start; flex-direction:column; justify-content:center; padding-block:1rem; } nav { gap:1.2rem; } .hero { padding-block:5rem 4rem; } .steps,.tech-list { grid-template-columns:1fr; } .tech { grid-template-columns:1fr; gap:.3rem; } }
+    @media(max-width:740px) { .hero { grid-template-columns:1fr; gap:2.5rem; } .hero-note { max-width:430px; } .steps { grid-template-columns:repeat(2,minmax(0,1fr)); } .closing { grid-template-columns:1fr; gap:1rem; } }
+    @media(max-width:500px) { .wrap { width:min(100% - 2rem,1080px); } .nav { align-items:flex-start; flex-direction:column; justify-content:center; padding-block:1rem; } nav { gap:1.2rem; } .hero { padding-block:5rem 4rem; } .steps { grid-template-columns:1fr; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
 <body>
   <header><div class="wrap nav">
     <a class="brand" href="/" aria-label="Tactical GIT AI home">TACTICAL GIT AI</a>
-    <nav aria-label="Main navigation"><a href="#product">Product</a><a href="#technology">Technology</a><a href="/privacy.html">Privacy</a></nav>
+    <nav aria-label="Main navigation"><a href="#product">Product</a><a href="/technology.html">Technology</a><a href="/privacy.html">Privacy</a></nav>
   </div></header>
   <main class="wrap">
     <section class="hero" aria-labelledby="hero-title">
@@ -71,17 +68,8 @@
         <div class="step"><span class="number">04</span><h3>Deliver</h3><p>Approved changes move through a declarative deployment path.</p></div>
       </div>
     </section>
-    <section class="section" id="technology" aria-labelledby="technology-title">
-      <h2 id="technology-title">02 / The architecture</h2>
-      <div class="tech-list">
-        <div class="tech"><h3>Agents &amp; memory</h3><p>Hermes Agent for specialized roles, Hindsight for memory, LiteLLM for model routing.</p></div>
-        <div class="tech"><h3>Work &amp; conversation</h3><p>Gitea for issues, code, and review; Mattermost for team coordination.</p></div>
-        <div class="tech"><h3>Orchestration &amp; delivery</h3><p>Temporal for durable workflows, Woodpecker CI for checks, and Flux CD for GitOps delivery.</p></div>
-        <div class="tech"><h3>Infrastructure</h3><p>Talos Linux and Kubernetes, with SOPS-encrypted configuration and observability.</p></div>
-      </div>
-    </section>
     <section class="closing" aria-labelledby="vision-title">
-      <h2 id="vision-title">03 / The vision</h2>
+      <h2 id="vision-title">02 / The vision</h2>
       <p>AI should accelerate the work without becoming the authority. Every decision has an owner; every change has evidence; every deployment has a traceable path.</p>
     </section>
   </main>
