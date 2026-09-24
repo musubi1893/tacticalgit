@@ -50,12 +50,12 @@
       <aside class="note"><strong>Design principle:</strong> agents reason; deterministic systems constrain, verify, and record.</aside>
     </div>
     <div class="overview">
-      <section class="row" aria-labelledby="agents"><h2 id="agents">01 / Agents</h2><p>Specialized language-model agents interpret objectives, divide work, and collaborate. Model routing keeps the reasoning layer separate from the work record and approval path.</p></section>
+      <section class="row" aria-labelledby="agents"><h2 id="agents">01 / AI Agents</h2><p>Specialized AI agents interpret objectives, divide work, and collaborate. Model routing keeps the reasoning layer separate from the work record and approval path.</p></section>
       <section class="row" aria-labelledby="workflows"><h2 id="workflows">02 / Workflows</h2><p>Durable orchestration coordinates steps, waits, retries, and handoffs. A workflow tracks execution; it does not decide whether a change is approved.</p></section>
       <section class="row" aria-labelledby="records"><h2 id="records">03 / Records</h2><p>Version control, issues, and reviews hold the canonical record of proposed changes and human decisions. Conversation helps the team coordinate, but does not replace that record.</p></section>
       <section class="row" aria-labelledby="evidence"><h2 id="evidence">04 / Evidence</h2><p>Automated builds, tests, and security checks produce evidence tied to a specific revision. Approval gates use that evidence before changes move forward.</p></section>
       <section class="row" aria-labelledby="delivery"><h2 id="delivery">05 / Delivery</h2><p>Declarative configuration and continuous reconciliation turn approved source changes into deployed state. Container orchestration provides the runtime; monitoring shows what actually happened.</p></section>
-      <section class="row" aria-labelledby="memory"><h2 id="memory">06 / Memory</h2><p>Persistent memory helps agents carry useful context between tasks. Encrypted configuration and scoped permissions keep access bounded by role.</p></section>
+      <section class="row" aria-labelledby="memory"><h2 id="memory">06 / Memory</h2><p>An open-source agent memory system helps agents carry useful context between tasks. Encrypted configuration and scoped permissions keep access bounded by role.</p></section>
     </div>
     <section class="closing" aria-labelledby="boundary"><h2 id="boundary">The boundary</h2><p>Reasoning can suggest the next action. Recorded decisions, deterministic checks, and human authority determine what is allowed to happen.</p></section>
   </main>
